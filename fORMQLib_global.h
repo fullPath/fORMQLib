@@ -1,0 +1,12 @@
+#ifndef FORMQLIB_GLOBAL_H
+#define FORMQLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(FORMQLIB_LIBRARY)
+#  define FORMQLIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define FORMQLIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // FORMQLIB_GLOBAL_H
